@@ -1,0 +1,276 @@
+@charset "UTF-8";
+/* Form Control */
+input,
+select,
+textarea,
+label{display:inline-block; box-sizing:border-box; width:auto; vertical-align:middle; line-height:1.4;}
+input[type=text],
+input[type=password],
+input[type=tel],
+input[type=date],
+input[type=email],
+input[type=number],
+textarea{height:33px; padding:7px 8px; margin:2px 0px; border:1px solid #ddd; background:#fff; vertical-align:middle;}
+textarea{resize:none;}
+select{height:33px; padding:0 8px; margin:2px 0px; border:1px solid #ddd; background:#fff; vertical-align:middle;}
+select::-ms-expand {background-color:transparent; border:0;}
+input[type="text"],
+input[type="password"],
+input[type="submit"],
+input[type="button"],
+input[type="number"],
+select{-webkit-border-radius:1px; -webkit-appearance:none; font-family:"NotoR";}
+select{padding-right:30px; background:url(/images/board/select_arrow.png) no-repeat calc(100% - 10px) 50%; background-size:10px 7px;}
+input[type=file]{background:#eee; font-size:1.08em;}
+input[readonly],
+input[disabled]{background:#eee;}
+input[type=checkbox],
+input[type=radio]{width:13px; height:13px; margin:2px 3px 1px 0;}
+input[type=checkbox] + label,
+input[type=radio] + label{margin-right:20px;}
+
+video{width:100%; max-width:640px; height:auto;}
+
+.input50{width:50px !important;}
+.input70{width:70px !important;}
+.input100{width:100px !important;}
+.input200{width:200px !important;}
+.input300{width:300px !important;}
+.input400{width:400px !important;}
+.inputFull{width:100% !important;}
+
+em {color:inherit!important}
+
+body, input, textarea, select, button {font-family:"NotoR", "Malgun Gothic", "맑은 고딕", "돋움", dotum, sans-serif; }
+
+/* 일반게시판_뷰페이지 */
+.bbsTitle{padding:10px !important; margin:0px !important; border-top:2px solid #505c78; border-bottom:2px solid #505c78;; font-size:18px !important; font-weight:300 !important; color:#222 !important; font-family:"NotoR"}
+.bbsTitle:before{display:none !important;}
+.bbsTitle em{display:inline-block; margin-right:5px; color:#148f77;}
+.bbsTitle .reply{display:inline-block; position:relative; padding:2px 7px; margin-right:5px; margin-bottom:3px; background:#41464e; border-radius:3px; font-size:13px; color:#fff !important; vertical-align:middle;}
+.bbsView{border-top:1px solid #505c78; border-bottom:1px solid #505c78; border-collapse:inherit; table-layout:fixed;  font-family:"NotoR"}
+.bbsTitle ~ .bbsView{border-top-width:0px;}
+.bbsView th,
+.bbsView td{padding:15px 10px; border-bottom:1px solid #eaecf1;}
+.bbsView th{background:#f9fafb; text-align:left; font-weight:500; letter-spacing:-1px;}
+.bbsView td{color:#666; word-break:break-all;}
+.bbsView th[data-view="file"]{border-top:1px solid #eaecf1;}
+.bbsView th[data-view="file"] + td{padding-left:25px; border-top:1px solid #eaecf1;}
+.bbsView th[data-view="file"],
+.bbsView th[data-view="date"],
+.bbsView th[data-view="count"]{padding-left:25px;}
+.bbsView td.conts{padding:30px 20px; border:0px;}
+/* .bbsView div.conts{min-height:100px;} 0109 주석처리*/ 
+.bbsView .conts .img{padding-bottom:30px; text-align:center;}
+.bbsView .conts .img img,
+.bbsView .conts img{max-width:100%; height:auto !important;}
+.bbsView textarea{resize:none; height:150px;}
+.bbsView td.date > span{margin-right:10px;}
+.bbsView td.category div{margin-top:3px;}
+.bbsView td.file > span{display:block; margin:2px 0;}
+.bbsView td.days input{width:110px; background:#e0e9f7; border-color:#9fb3d4;}
+.bbsView td.days span{display:inline-block; margin-right:5px;}
+.bbsView td.days span:after{content:','; display:inline-block;}
+.bbsView td.days span:last-child:after{display:none;}
+.bbsView.page{margin-top:20px;}
+.bbsView.page th,
+.bbsView.page td{padding:15px 15px 15px 25px;}
+.bbsView.page tr:first-child th,
+.bbsView.page tr:first-child td{border-top:1px solid #eaecf1; border-bottom:1px dotted #eaecf1;}
+.bbsView div.conts table{margin-left:auto !important; margin-right:auto !important; border-top:2px solid #555;}/* 191227 border-top:2px solid #555; 추가 */
+
+*[class^="bbs"] ~ .btn_area{padding-top:50px;}
+
+.bbsView.dl{border-top:1px solid #505c78; border-bottom:1px solid #505c78;}
+.bbsTitle ~ .bbsView.dl{border-top-width:0px;}
+.bbsView dl dt,
+.bbsView dl dd{box-sizing:border-box; padding:15px 15px; border-bottom:1px solid #eaecf1; word-break:keep-all;}
+.bbsView dl dt{width:20%; background:#f9fafb; text-align:left; font-weight:500; letter-spacing:-1px; vertical-align:middle;}
+.bbsView dl dt span{display:inline-block; vertical-align:middle;}
+.bbsView dl dd{width:80%;}
+.bbsView dl dd input[type="text"],
+.bbsView dl dd input[type="password"],
+.bbsView dl dd input[type="file"],
+.bbsView dl dd textarea,
+.bbsView dl dd select{width:100%;}
+.bbsView dl dd input[type="file"]{font-size:14px;}
+.bbsView dl dd .designFile input[type="text"]{padding-right:110px;}
+.bbsView dl dd .designFile .button{position:absolute; top:0px; right:0px;}
+.bbsView dl dd .designFile.mob input[type="text"]{padding-right:0px;}
+.bbsView dl dd .designFile.mob input[type="file"]{width:100%;}
+.bbsView dl:last-child dt,
+.bbsView dl:last-child dd{border-bottom:1px solid #dcdee2;}
+.bbsView dl.col02 dt{width:20%;}
+.bbsView dl.col02 dd{width:30%; vertical-align:middle;}
+.bbsView dl.col02 dt:nth-of-type(2){border-left-width:0px;}
+.bbsView dl.colspan{position:relative;}
+.bbsView dl.colspan dt{height:54px; vertical-align:top;}
+.bbsView dl.colspan dt:after{content:''; display:inline-block; height:100%; vertical-align:middle;}
+.bbsView dl.colspan dd{position:absolute;/*  width:960px; */}
+
+
+.btn_area button{display:inline-block; height:35px; color:#fff; line-height:35px; padding:0 10px; margin: 3px; background:#0b61b8; vertical-align:middle;  text-align:center; float:right; size :100px}
+.btn_area butTon:hover
+
+/* th,td tr에 여러개 들어갈 경우 */
+.bbsView.col tr td:not(:last-child){border-right-width:0px !important;}
+
+.bbsView col[data-view="th"]{width:80px !important;}
+.bbsView col[data-view="td"]{width:auto !important;}
+.bbsView th[data-view="count"] + td{width:70px !important;}
+.bbsView col[data-write="th"]{width:120px !important;}
+.bbsView col[data-write="td"]{width:auto !important;}
+.bbsView input[type="text"],
+.bbsView input[type="file"],
+.bbsView input[type="password"]{width:100% !important;}
+.bbsView td.tel > input[type="text"],
+.bbsView td.tel > select,
+.bbsView *[data-member-form="phone"] > input[type="text"],
+.bbsView *[data-member-form="phone"] > select{display:inline-block; width:30% !important;}
+.bbsView td.tel > span{display:inline-block;}
+.bbsView td.mail > input[type="text"]{margin:2px 0px;}
+.bbsView td.mail > select{width:100%;}
+.bbsView .designFile input[type="file"]{padding-right:110px;}
+.bbsView .designFile .button{position:absolute; top:0px; right:0px;}
+
+@media all and (max-width:480px){
+	/* form박스 : 191220 */
+	.bbsView th, .bbsView td{padding:15px 5px;} /* 191227 */
+	.bbsView td.conts{padding:20px 10px; } /* 191227 */
+	.bbsView th[data-view="file"] + td{padding-left:10px; } /* 191227 */
+	.bbsView.dl{display:table; table-layout:fixed; width:100%;}
+	.bbsView dl{display:table-row;}
+	.bbsView dl dt,
+	.bbsView dl dd{display:table-cell;}
+}
+
+@media all and (max-width:380px){
+	.bbsView *[data-member-form="phone"] > select{display:block; width:100% !important;}	
+	.bbsView *[data-member-form="phone"] > input[type="text"]{width:44% !important; margin-top:3px;}
+	.bbsView th[data-view="date"] + td,
+	.bbsView th[data-view="count"] + td{font-size:14px;}
+	.bbsView col[data-view="th"]{width:70px !important; } /* 191227 */
+}
+
+@media all and (max-width:340px){
+	.bbsView th[data-view="count"] + td{width:40px !important;}
+	.bbsView col[data-write="th"]{width:100px !important;}
+}
+
+/* base styles */
+* { margin:0; padding:0;}
+body {padding: 0; font-size: 1em; line-height: 1.5; color: #666;}
+a {color: #666; text-decoration: none; }
+a:hover, a:active {text-decoration: none; }
+blockquote {margin: 1em 40px; }
+pre {white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+li {list-style: none; }
+i, em, address {font-style: normal; }
+button, input, select, textarea {font-size: 100%; margin: 0; vertical-align: baseline; }
+button {-webkit-appearance: none; box-sizing: content-box; /* padding: .4em 1em;*/ border: 0 none; background: transparent; line-height: normal; }
+input[type="checkbox"], input[type="radio"] {vertical-align: middle; }
+input[type="search"] {-webkit-appearance: none; }
+textarea {vertical-align: top; resize: vertical; }
+input:invalid, textarea:invalid {background-color: #f6f6f6; }
+table {width: 100%; empty-cells: show; }
+td {vertical-align: middle; }
+select {vertical-align: middle; }
+/*::-moz-selection {background: #b39a78; color: #fff; text-shadow: none; }
+::selection {background: #b39a78; color: #fff; text-shadow: none; }*/ /* 텍스트 드래그시 배경 색상 */
+::-webkit-input-placeholder {color: #aaaaaa; }
+:-moz-placeholder {color: #aaaaaa; }
+input::-webkit-input-placeholder {color: #aaaaaa; }
+textarea::-webkit-input-placeholder {color: #aaaaaa; }
+table caption {position:relative; height:0; width:0; /* font-size:0; */ text-indent:-99999%; line-height:0; overflow:hidden;} /* 200427 수정 */
+
+/* base layout */
+body, input, textarea, select, button {font-family:"Malgun Gothic", "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif; }
+html {background-color: #fff; }
+body {min-width: 320px; letter-spacing: -0.034em; word-spacing: 0.03em; }
+h1, h2, h3, h4, h5, h6 {margin: 0; font-weight: normal; }
+img {/*max-width: 100%;*/ height: auto; vertical-align:middle; -ms-interpolation-mode: bicubic; } /* 191028 수정 */ /* 190215 max-width:100% 주석처리 */
+em {color: #ed1c24; }
+
+
+/* layout grid */
+html, body {min-height: 100%; }
+body {background-color: #fff; -webkit-overflow-scrolling: touch; }
+#wrap {-webkit-user-drag: none; touch-action: pan-y; }
+
+
+
+
+/* 본고딕 */
+@font-face {
+    font-family: 'NotoT';
+    src: url(/font/NotoSansKR/NotoSansKR-Thin.eot);
+    src: url(/font/NotoSansKR/NotoSansKR-Thin.eot?#iefix) format('embedded-opentype'),
+    	 url(/font/NotoSansKR/NotoSansKR-Thin.woff2) format('woff2'),
+		 url(/font/NotoSansKR/NotoSansKR-Thin.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NotoL';
+    src: url(/font/NotoSansKR/NotoSansKR-Light.eot);
+    src: url(/font/NotoSansKR/NotoSansKR-Light.eot?#iefix) format('embedded-opentype'),
+    	 url(/font/NotoSansKR/NotoSansKR-Light.woff2) format('woff2'),
+		 url(/font/NotoSansKR/NotoSansKR-Light.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NotoDL';
+    src: url(/font/NotoSansKR/NotoSansKR-DemiLight.eot); 
+    src: url(/font/NotoSansKR/NotoSansKR-DemiLight.eot?#iefix) format('embedded-opentype'),
+		 url(/font/NotoSansKR/NotoSansKR-DemiLight.woff2) format('woff2'),
+		 url(/font/NotoSansKR/NotoSansKR-DemiLight.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NotoR';
+    src: url(/font/NotoSansKR/NotoSansKR-Regular.eot);
+    src: url(/font/NotoSansKR/NotoSansKR-Regular.eot?#iefix) format('embedded-opentype'),
+    	 url(/font/NotoSansKR/NotoSansKR-Regular.woff2) format('woff2'),
+		 url(/font/NotoSansKR/NotoSansKR-Regular.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NotoM';
+    src: url(/font/NotoSansKR/NotoSansKR-Medium.eot);
+   	src: url(/font/NotoSansKR/NotoSansKR-Medium.eot?#iefix) format('embedded-opentype'),
+    	 url(/font/NotoSansKR/NotoSansKR-Medium.woff2) format('woff2'),
+		 url(/font/NotoSansKR/NotoSansKR-Medium.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NotoB';
+    src: url(/font/NotoSansKR/NotoSansKR-Bold.eot);
+    src: url(/font/NotoSansKR/NotoSansKR-Bold.eot?#iefix) format('embedded-opentype'),
+    	 url(/font/NotoSansKR/NotoSansKR-Bold.woff2) format('woff2'),
+		 url(/font/NotoSansKR/NotoSansKR-Bold.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'NotoBK';
+    src: url(/font/NotoSansKR/NotoSansKR-Black.eot);
+    src: url(/font/NotoSansKR/NotoSansKR-Black.eot?#iefix) format('embedded-opentype'),
+    	 url(/font/NotoSansKR/NotoSansKR-Black.woff2) format('woff2'),
+		 url(/font/NotoSansKR/NotoSansKR-Black.woff) format('woff');
+}
+
+	
+/* 맑은 고딕*/
+.malgun {font-family: "맑은 고딕", Malgun Gothic !important;}
+
+/* 돋움 */
+.dotum {font-family: "돋움", Dotum !important;}
+
+/* 본고딕 */
+.NotoT {font-family:"NotoT" !important;}
+.NotoL {font-family:"NotoL" !important;}
+.NotoDL {font-family:"NotoDL" !important;}
+.NotoR {font-family:"NotoR" !important;}
+.NotoM {font-family:"NotoM" !important;}
+.NotoB {font-family:"NotoB" !important;}
+.NotoBK {font-family:"NotoBK" !important;}
+
+

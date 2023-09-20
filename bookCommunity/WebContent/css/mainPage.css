@@ -1,0 +1,292 @@
+/* 헤더시작 */
+header {
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0;
+    /* border: 1px solid red; */
+    background-color: #5380a3;
+    height: 100px;
+    display: block;
+    font-size: 100%;
+    vertical-align: baseline;
+    position: fixed;
+    z-index:999;
+}
+
+
+h1 {
+    color: #fff;
+    position: relative;
+    margin-left: 220px;
+    margin-top: 30px;
+    display: inline-block;
+    /* border: 1px solid red; */
+}
+
+a {
+    color: black;
+}
+
+#site-title {
+    display: block;
+}
+
+#gnb {
+    width: 1178px;
+    height: 100px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    position: relative;
+    display: block;
+    bottom: 85px;
+}
+
+#gnb>ul li a {
+    size: 20px;
+    margin-left: 20px;
+}
+
+ul li {
+    margin-top: 60px;
+    list-style-type: none;
+    margin-left: 20px;
+    float: left;
+    font-size: 22px;
+}
+
+#gnb>ul li a {
+    color: #fff;
+}
+
+/* 헤더끝 */
+/* 애니메이션 */
+
+
+/* 바디시작 */
+main {
+    /* border: 1px solid red; */
+
+}
+
+/* 배너 테스트 */
+#mm {
+    width: 1178px;
+    height: 430px;
+    position: relative;
+    left: 120px;
+    /* border: 1px solid red; */
+    z-index: -100;
+
+}
+
+.container {
+    width: 1100vw;
+    /* border: 1px solid red; */
+    transition: transform 0.5s;
+    overflow: hidden;
+    animation-name: innerimg;
+    animation-duration: 40s;
+    animation-delay: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+.inner {
+    width: 100vw;
+    float: left;
+    padding-top: 30px;
+
+
+}
+
+@keyframes innerimg {
+    from {
+        margin-left: 0px;
+    }
+
+    to {
+        margin-left: -1000vw;
+    }
+}
+
+.inner img {
+
+    width: 300px;
+    height: 400px;
+    float: left;
+    /* border: 1px solid red; */
+
+}
+
+
+
+#btn {
+    display: inline-block;
+    position: relative;
+    left: 400px;
+    width: 300px;
+    height: 30px;
+    /* border: 1px solid red; */
+
+
+}
+
+#mainbanner .shadow {
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 80px;
+    right: -79px;
+    display: block;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+/* 메인베너 글씨들 */
+#mainbanner01 .title {
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 24px;
+    color: #333;
+    text-decoration: none;
+    word-break: keep-all;
+    /* border: 1px solid red; */
+
+
+}
+
+#mainbanner01 .info {
+    margin-bottom: 10px;
+    padding-left: 2px;
+}
+
+#mainbanner01 .info .role,
+#mainbanner01 .info strong {
+    font-weight: bold;
+    color: #333;
+
+}
+
+
+#mainbanner01 .info a {
+    color: #999;
+    text-decoration: none;
+
+}
+
+.sep {
+    margin: 0 4px;
+    color: #ccc;
+}
+
+#mainbanner01 .text .copy {
+    line-height: 1.6;
+    color: #999;
+    padding-left: 2px;
+    word-break: keep-all;
+
+}
+
+#mainbanner01 {
+    width: 1178px;
+    height: 430px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+    margin-top: 100px;
+    cursor: pointer;
+
+}
+
+#mainbanner02 {
+    width: 1178px;
+    height: 626px;
+    /* border: 1px solid red; */
+    margin: 0 auto;
+}
+
+#mainbanner03 {
+    margin: 0 auto;
+    margin-left: 110px;
+    margin-top: -20px;
+    width: 700px;
+    height: 161px;
+    /* border: 1px solid red; */
+    display: block;
+    cursor: pointer;
+}
+
+#home-bottom {
+    margin: 0 auto;
+    margin-left: 110px;
+    width: 700px;
+    height: 460px;
+    /* border: 1px solid red; */
+    display: block;
+}
+
+#home-bottom01 {
+    width: 360px;
+    height: 460px;
+    /* border: 1px solid red; */
+    float: left;
+
+    cursor: pointer;
+}
+
+#home-bottom02 {
+
+    margin-left: 400px;
+    width: 360px;
+    height: 460px;
+    /* border: 1px solid blue; */
+    cursor: pointer;
+}
+
+#sidebar {
+    float: right;
+    width: 260px;
+    height: 626px;
+    /* border: 1px solid blue; */
+    display: inline-block;
+    margin-top: -620px;
+}
+
+/* 바디 끝 */
+
+/* 푸터시작 */
+footer {
+    padding: 0;
+    border: none;
+    margin-top: -1px;
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    font-size: 100%;
+    vertical-align: baseline;
+    /* border: 1px solid red; */
+
+}
+
+#footer-inside {
+    padding: 26px 0;
+    border-top: 1px solid #ddd;
+    font-size: 11px;
+    line-height: 1.5;
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    border: 0;
+    vertical-align: baseline;
+    display: block;
+    color: #bbb;
+}
+
+
+
+
+
+
+/* 푸터 끝 */
